@@ -1,0 +1,89 @@
+/* G E N E R A L */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 510px;
+    height: 600px;
+    margin: -300px 0 0 -255px;
+    background: #000;
+    border: 1px solid #fff;
+}
+
+#container.container-mobile{
+    margin: 0;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/* C O N T R O L  B U T T O N S */
+.buttons {
+    position: absolute;
+}
+
+.buttons * {
+    position: relative;
+    z-index: 1;
+    opacity: 0.8;
+    float: left;
+    height: 50px;
+    width: 50px;
+    background: url('../img/buttons.png') no-repeat;
+    margin-right: 5px;
+}
+
+.buttons.arrows {
+    left: 20px;
+    top: 100%;
+    margin-top: -82px;
+}
+
+.buttons.actions {
+    left: 100%;
+    top: 100%;
+    margin: -82px 0 0 -130px;
+}
+
+#btn-left {
+    background-position: -50px 0;
+}
+
+#btn-right {
+    background-position: 0 0;
+}
+
+#btn-space {
+    width: 100px;
+    background-position: -100px 0;
+}
+
+/* S O U N D */
+#sound {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    width: 50px;
+    height: 40px;
+    background: url('../img/sound.png') no-repeat 0 0;
+    cursor: pointer;
+}
+
+#sound.sound-off {
+    background-position: -50px 0;
+}

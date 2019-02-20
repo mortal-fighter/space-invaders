@@ -1,0 +1,2 @@
+Scripts in this folder are to be used in app.js only!
+No validation! 
